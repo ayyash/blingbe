@@ -1,0 +1,61 @@
+{
+  "mscp": {
+    "name": "test-job-1",
+    "tool": "testtool",
+    "workers": 1,
+    "debug": false,
+    "retries": 4,
+    "mode": "one_time"
+  },
+
+  "transfer": {
+    "source": {
+      "path": "/Users/mayyash/Downloads/error-source-1",
+      "list": "",
+      "sse": {
+        "enabled": false,
+        "type": "SSE-C",
+        "key": "",
+        "md5": "",
+        "algorithm": "AES256"
+      },
+      "exclude": [".snapshot", ".DS_Store"]
+    },
+    "target": {
+      "path": "s3://key:secret@endpoint:bucket",
+      "host": "hostname",
+      "port": 33001,
+      "user": "hst_user",
+      "key": "/home/hst_user/.ssh/id_rsa",
+      "log": "/HST_log/mscp/jobname"
+    }
+  },
+
+  "options": {
+    "common": {
+      "preserveObjectLockLegalHold": false,
+      "preserveObjectLockRetention": false
+    },
+    "ascp": {
+      "applyLocalDocRoot": false,
+      "preservefileowneruid": true,
+      "preservefileownergid": true,
+      "preservecreationtime": true,
+      "preservemodificationtime": true,
+      "rate": 500000000,
+      "basicToken": "",
+      "overwrite": "always",
+      "k": 1,
+      "datagram": 8800,
+      "mode": "send"
+    },
+    "metacopy": {
+      "disableRemoteCheck": false,
+      "BasePort": 8888,
+      "overrideSSL:": "",
+      "read-timeout": 60,
+      "connect-timeout": 60,
+      "user-agent": "aspera-mscp"
+    }
+  }
+}

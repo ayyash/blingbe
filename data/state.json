@@ -1,0 +1,24 @@
+{
+    "scan": {
+        "state": "stopped",
+        "pid": 69474,
+        "timestamp": 1726996020.283554,
+        "lastError": ""
+    },
+    "transfer": {
+        "state": "stopped",
+        "workers": [
+            {
+                "state": "stopped",
+                "pid": 0,
+                "timestamp": 1726996020.283319,
+                "lastError": "",
+                "id": "1",
+                "failedCount": 2500,
+                "currentSegment": "",
+                "segmentCount": 4,
+                "toolpid": 69482
+            }
+        ]
+    }
+}
