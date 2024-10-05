@@ -6,10 +6,10 @@
         "lastError": ""
     },
     "transfer": {
-        "state": "stopped",
+        "state": "running",
         "workers": [
             {
-                "state": "stopped",
+                "state": "running",
                 "pid": 0,
                 "timestamp": 1726996020.283319,
                 "lastError": "",
