@@ -10,12 +10,34 @@
         "workers": [
             {
                 "state": "running",
-                "pid": 0,
-                "timestamp": 1726996020.283319,
+                "pid": 3433,
+                "timestamp": 1726996020.33319,
                 "lastError": "",
                 "id": "1",
                 "failedCount": 2500,
                 "currentSegment": "",
+                "segmentCount": 4,
+                "toolpid": 69482
+            },
+            {
+                "state": "stopping",
+                "pid": 3425,
+                "timestamp": 1728328984.385,
+                "lastError": "Oh oh something went wrong",
+                "id": "2",
+                "failedCount": 3,
+                "currentSegment": "sg339",
+                "segmentCount": 4,
+                "toolpid": 69482
+            },
+            {
+                "state": "failed",
+                "pid": 3422,
+                "timestamp": 1728328984.485,
+                "lastError": "Oh oh something went wrong",
+                "id": "3",
+                "failedCount": 1,
+                "currentSegment": "sg339",
                 "segmentCount": 4,
                 "toolpid": 69482
             }
