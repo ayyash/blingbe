@@ -22,11 +22,11 @@ module.exports = function () {
         const o = require('../data/jobs.json').jobs;
         const j = req.body;
 
-        const _j = o.find(j => j.id === req.params.id);
+        const _j = o.find(n => n === req.params.id);
         if (_j) {
             Object.assign(_j, j);
         }
-        res.json(_j);
+        res.json(j);
     });
 
 

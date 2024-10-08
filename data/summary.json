@@ -25,11 +25,11 @@
             "deletedfiles": 0,
             "deletedbytes": 0,
             "deletedbytes_h": "0.00 B",
-            "file_histo_0_10k": 40000,
-            "file_histo_10k_1mb": 0,
-            "file_histo_1mb_10mb": 0,
-            "file_histo_10mb_1gb": 0,
-            "file_histo_1gb_over": 0
+            "file_histo_0_10k": 10,
+            "file_histo_10k_1mb": 100,
+            "file_histo_1mb_10mb": 1000,
+            "file_histo_10mb_1gb": 100000,
+            "file_histo_1gb_over": 1000000
         },
         "state": "completed",
         "pid_state": 69474
@@ -45,9 +45,9 @@
         "errorbytes": 100000,
         "errorbytes_h": "97.66 KB",
         "file_histo_0_10k": "70000",
-        "file_histo_10k_1mb": "0",
+        "file_histo_10k_1mb": "10000",
         "file_histo_1mb_10mb": "0",
-        "file_histo_10mb_1gb": "0",
+        "file_histo_10mb_1gb": "300",
         "file_histo_1gb_over": "0",
         "asperaworkerrate": 2500,
         "totalduration": 26,
