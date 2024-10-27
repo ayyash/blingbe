@@ -43,33 +43,38 @@ module.exports = function () {
     router.post('/mscp/:id/:action', function (req, res) {
         // /action is startTransfer stopTransfer
         // /stop /stopTransfer /startScanner stopScanner
-        const p = require('../data/state.json');
-        const _p = structuredClone(p);
-        const _state = req.params.action;
-        // guessing
-        switch (_state) {
-            case 'startTransfer':
-                _p.transfer.state = 'starting';
-                _p.transfer.workers.forEach(w => {
-                    w.state = 'starting';
-                });
-                break;
-            case 'stopTransfer':
-                _p.transfer.state = 'stopping';
-                // also all worksers
-                _p.transfer.workers.forEach(w => {
-                    w.state = 'stopping';
-                });
-                break;
-            case 'startScan':
-                _p.scan.state = 'starting';
-                break;
-            case 'stopScan':
-                _p.scan.state = 'stopping';
-                break;
-        }
 
-        res.json(_p);
+        // const p = require('../data/state.json');
+        // const _p = structuredClone(p);
+        // const _state = req.params.action;
+        // // guessing
+        // switch (_state) {
+        //     case 'startTransfer':
+        //         _p.transfer.state = 'starting';
+        //         _p.transfer.workers.forEach(w => {
+        //             w.state = 'starting';
+        //         });
+        //         break;
+        //     case 'stopTransfer':
+        //         _p.transfer.state = 'stopping';
+        //         // also all worksers
+        //         _p.transfer.workers.forEach(w => {
+        //             w.state = 'stopping';
+        //         });
+        //         break;
+        //     case 'startScan':
+        //         _p.scan.state = 'starting';
+        //         break;
+        //     case 'stopScan':
+        //         _p.scan.state = 'stopping';
+        //         break;
+        // }
+
+        // res.json(_p);
+
+        res.json({
+            "result": "Start scanning and transfer"
+        });
     });
     router.post('/mscp/workers/:id/:action', function (req, res) {
         const p = require('../data/state.json');

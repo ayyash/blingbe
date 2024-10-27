@@ -1,11 +1,11 @@
 {
-    "scan": {
+    "Scan": {
         "state": "stopped",
         "pid": 69474,
         "timestamp": 1726996020.283554,
         "lastError": ""
     },
-    "transfer": {
+    "Transfer": {
         "state": "running",
         "workers": [
             {
