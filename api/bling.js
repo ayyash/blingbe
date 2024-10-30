@@ -94,11 +94,17 @@ module.exports = function () {
     router.get('/mscp/:id/state', function (req, res) {
         const p = require('../data/state.json');
         res.json(p);
+        // res.status(400).json({
+        //     "error": "Not implemented"
+        // });
     });
 
     router.get('/mscp/:id/summary', function (req, res) {
         const p = require('../data/summary.json');
         res.json(p);
+        // res.status(400).json({
+        //     "error": "Not implemented"
+        // });
     });
 
 
